@@ -1,0 +1,97 @@
+:root {
+  --color-text: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: #171836;
+  width: 1440px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  padding-right: 120px;
+  padding-left: 120px;
+}
+
+/* Заголовок */
+
+header {
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.header--nav ul {
+  padding-left: 0;
+}
+
+header > ul {
+  display: flex;
+}
+
+header li {
+  display: flex;
+  list-style-type: none;
+  color: white;
+  align-items: center;
+}
+
+header li:nth-child(2) {
+  margin-left: 150px;
+  margin-right: 45px;
+}
+
+header li:nth-child(3),
+header li:nth-child(4) {
+  margin-right: 45px;
+}
+
+header li:nth-child(6) {
+  margin-right: 30px;
+  margin-left: auto;
+}
+
+header li > a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Основной контект */
+/* hero--section */
+
+.hero--section {
+  display: grid;
+  grid-template-columns: 785px 515px;
+}
+
+.hero--element__student {
+  width: 785px;
+  height: 750px;
+
+  background-image: url(/image/student.svg);
+}
+
+.hero--element__background--lamp {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 92px;
+  top: 282px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(76, 94, 157, 0.9) -32.08%,
+    rgba(23, 24, 54, 0.9) 127.36%
+  );
+  border-radius: 20px;
+  transform: rotate(-8.82deg);
+}
+
+.hero--element__lamp {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 105px;
+  top: 290px;
+  background: url(/image/lamp.svg) no-repeat;
+}
